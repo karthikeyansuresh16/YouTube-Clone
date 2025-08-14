@@ -1,0 +1,147 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(216, 212, 212);
+    z-index: 1;
+}
+.search-bar {
+   height: 36px;
+   flex: 1;
+   font-size: 14px;
+   font-family: Roboto, Arial;
+   padding-left: 10px;
+   border-width: 0.5px;
+   border-style: solid;
+   border-color: rgb(133, 129, 129);
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+   width: 0;
+}
+.search-bar:hover {
+    background-color: rgb(247, 245, 245);
+}
+.left-section {
+  display: flex;
+  align-items: center;
+}
+.right-section {
+ width: 180px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-right: 20px;
+ flex-shrink: 0;
+}
+.middle-section {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.search-icon {
+    height: 25px;
+}
+.search {
+    position: relative;
+    height: 36px;
+    width: 66px;
+    background-color: rgb(240, 240, 240);
+    border-color: rgb(167, 164, 164);
+    border-width: 0.5px;
+    border-style: solid;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: -1;
+    margin-right: 10px;
+}
+.search , .mic , .upload-container ,.app-container,
+.notification {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search .tool-tip , .mic .tool-tip , 
+.upload-container .tool-tip ,.app-container .tool-tip,
+ .notification .tool-tip {
+    position: absolute;
+    background-color: rgb(94, 88, 88);
+    border-radius: 4px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    bottom: -40px;;
+    color: white;
+    padding: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity, background-color 0.15s;
+}
+.search:hover .tool-tip, .mic:hover .tool-tip,
+.upload-container:hover .tool-tip , 
+.app-container:hover .tool-tip, .notification:hover .tool-tip
+ {
+    opacity: 1;
+}
+.search:hover {
+background-color: rgb(172, 169, 169);
+}
+.mic {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: 0;
+    background-color: rgb(245, 245, 245);
+    margin-right: 20px;
+}
+.mic:hover {
+    background-color: rgb(172, 169, 169);
+}
+.ham {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.yt {
+    height: 20px;
+    margin-right:40px;
+}
+.notify {
+    height: 24px;
+}
+.notification {
+    position: relative;
+}
+.notifications {
+    position: absolute;;
+    background-color: rgb(240, 0, 0);
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    top: -5px;
+    right: -5px;
+    border-radius: 50%;
+}
+.upload {
+    height: 24px;
+}
+.app {
+    height: 24px;
+}
+.profile {
+    height: 34px;
+    border-radius: 16px;
+}
